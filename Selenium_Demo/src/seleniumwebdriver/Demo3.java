@@ -26,9 +26,8 @@ public class Demo3 {
 			Thread.sleep(3000);
 		}	
 		
-		driver.findElement(By.xpath("/html/body/div[2]/table/tbody/tr/td[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[2]/td[2]/a")).click();
-		WebElement radio = driver.findElement(By.xpath("/html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[2]/td[2]/b/font/input[2]"));
-		radio.click();
+		driver.findElement(By.xpath("//*[@href='reservation.php']")).click();
+		driver.findElement(By.xpath("//*[@name='tripType'][2]")).click();
 		Thread.sleep(3000);
 		driver.close();
 		
